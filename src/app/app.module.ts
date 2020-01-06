@@ -4,6 +4,8 @@ import {FormsModule} from '@angular/forms';
 import {AppComponent} from './app.component';
 import {ServerComponent} from "./server/server.component";
 import {TerminalServiceComponent} from './terminal-service/terminal-service.component';
+import {SuccessComponent} from "./success/success.component";
+import {WarningComponent} from "./warning/warning.component";
 
 //import {HttpModule} from '@angular/http';
 
@@ -11,7 +13,9 @@ import {TerminalServiceComponent} from './terminal-service/terminal-service.comp
   declarations: [
     AppComponent,
     ServerComponent,
-    TerminalServiceComponent
+    TerminalServiceComponent,
+    SuccessComponent,
+    WarningComponent
   ],
   imports: [
     BrowserModule,
