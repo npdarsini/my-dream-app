@@ -1,0 +1,6 @@
+<label>UserName Creation Service</label>
+<input type="text" class="form-control" [(ngModel)]="userNameVar">
+<p>{{userNameVar}}</p>
+
+<button class = "btn btn-primary" [disabled]="isDisabled()"
+        (click)="resetUserName()">Reset</button>
