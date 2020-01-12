@@ -6,6 +6,7 @@ import {ServerComponent} from "./server/server.component";
 import {TerminalServiceComponent} from './terminal-service/terminal-service.component';
 import {SuccessComponent} from "./success/success.component";
 import {WarningComponent} from "./warning/warning.component";
+import {UsernameComponent} from "./username/username.component";
 
 //import {HttpModule} from '@angular/http';
 
@@ -15,7 +16,8 @@ import {WarningComponent} from "./warning/warning.component";
     ServerComponent,
     TerminalServiceComponent,
     SuccessComponent,
-    WarningComponent
+    WarningComponent,
+    UsernameComponent
   ],
   imports: [
     BrowserModule,
