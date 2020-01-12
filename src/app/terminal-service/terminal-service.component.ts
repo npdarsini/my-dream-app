@@ -9,10 +9,28 @@ import {Component, OnInit} from '@angular/core';
 })
 export class TerminalServiceComponent implements OnInit {
 
+  allowNewServer = false;
+  serverCreationStatus = 'No Server created';
+  serverName = 'ServerName';
+
   constructor() {
+    setTimeout(() => {
+      this.allowNewServer = true;
+    }, 2000)
   }
 
   ngOnInit() {
   }
+
+
+  onCreateServer() {
+    this.serverCreationStatus = this.serverName+' was created!!';
+  }
+
+  updateServerName(event: Event){
+    console.log(event);
+    this.serverName = (<HTMLInputElement>event.target).value;
+  }
+
 
 }
