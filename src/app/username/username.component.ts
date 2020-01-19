@@ -15,7 +15,7 @@ export class UsernameComponent {
   }
 
   isDisabled(){
-    if(this.userNameVar == ''){
+    if(this.userNameVar === ''){
       return true;
     } else {
       return false;
