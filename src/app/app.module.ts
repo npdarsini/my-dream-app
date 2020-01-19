@@ -7,6 +7,7 @@ import {TerminalServiceComponent} from './terminal-service/terminal-service.comp
 import {SuccessComponent} from "./success/success.component";
 import {WarningComponent} from "./warning/warning.component";
 import {UsernameComponent} from "./username/username.component";
+import { DisplayDetailsComponent } from './display-details/display-details.component';
 
 //import {HttpModule} from '@angular/http';
 
@@ -17,7 +18,8 @@ import {UsernameComponent} from "./username/username.component";
     TerminalServiceComponent,
     SuccessComponent,
     WarningComponent,
-    UsernameComponent
+    UsernameComponent,
+    DisplayDetailsComponent
   ],
   imports: [
     BrowserModule,

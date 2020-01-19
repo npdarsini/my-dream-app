@@ -1,0 +1,5 @@
+<button class="btn btn-primary" (click)="onClick()"> Display Details</button>
+<p *ngIf="show === true">{{displayDetails}}</p>
+<p *ngFor="let buttonVar of buttonEventList"
+   [ngStyle]="{'background-color':getColor(buttonVar)}"
+  [ngClass]=" {getColor : buttonVar > 5}">{{buttonVar}}</p>
